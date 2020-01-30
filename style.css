@@ -1,0 +1,357 @@
+/* Color Theme Swatches in Hex */
+.pot-1-hex { color: #8EA8BF; }/*Light blue*/
+.pot-2-hex { color: #2F5973; }/*Dark blue*/
+.pot-3-hex { color: #D9CBBF; }/*Tan*/
+.pot-4-hex { color: #593825; }/*Brown*/
+.pot-5-hex { color: #A67C63; }/*light brown*/
+
+/* Color Theme Swatches in RGBA */
+.potw1944a-1800-1-rgba { color: rgba(142, 168, 191, 1); }
+.potw1944a-1800-2-rgba { color: rgba(47, 89, 115, 1); }
+.potw1944a-1800-3-rgba { color: rgba(217, 203, 191, 1); }
+.potw1944a-1800-4-rgba { color: rgba(89, 56, 37, 1); }
+.potw1944a-1800-5-rgba { color: rgba(166, 124, 99, 1); }
+
+/* Color Theme Swatches in HSLA */
+.potw1944a-1800-1-hsla { color: hsla(208, 27, 65, 1); }
+.potw1944a-1800-2-hsla { color: hsla(202, 41, 31, 1); }
+.potw1944a-1800-3-hsla { color: hsla(27, 25, 80, 1); }
+.potw1944a-1800-4-hsla { color: hsla(21, 41, 24, 1); }
+.potw1944a-1800-5-hsla { color: hsla(22, 27, 51, 1); }
+@font-face {
+  font-family: "nasalization-rg";
+  src: url(fonts/nasalization-rg.ttf) format('truetype');
+}
+
+*{
+  box-sizing:border-box;
+  padding:0;
+  margin:0;
+  font-family:"IBM Plex Sans",Helvetica;
+  font-size:100%;
+}
+body{
+  display:block;
+  margin:auto;
+  background-image:linear-gradient(to left, rgba(255,255,255,.5),rgba(255,255,255,0), rgba(255,255,255,.5)),linear-gradient(to bottom, rgba(255,255,255,.5),rgba(255,255,255,.0), rgba(255,255,255,.5)),url("./images/0013.jpg");
+  background-size:auto;
+  background-color:rgba(0,0,0,1);
+  max-width:2048px;
+}
+
+h1{
+  text-align:center;
+  text-size:150%;
+}
+h2{
+  text-align:left;
+  margin:auto;
+}
+article{
+  font-size:100%;
+  text-align:center;
+  overflow:scroll;
+  border-radius:15px;
+}
+p{
+  font-size:100%;
+  overflow:scroll;
+  margin:0 2% 0 2%;
+}
+.tnr{
+}
+.uppercase{
+  text-transform:uppercase;
+}
+.center{
+  text-align:center;
+}
+
+nav{
+  width:100%;
+  margin:auto;
+  text-align:center; 
+  background-color:rgba(128,128,128,1);
+  position:fixed;
+  top:0;
+  color:black;
+  z-index:10;
+}
+nav.home-page{
+  color:white;
+  background-color:rgba(0,0,0,1);
+  position:relative;
+  margin:auto;
+  /*margin:10% auto 10% auto;*/
+  width:100%;
+}
+.navlink{
+  font-size:120%;
+  color:black;
+  display:inline-block;
+  margin:auto;
+  width:24%;
+  /*height:40;*/
+  text-align:center;
+}
+.navlink:hover{
+  background-color:rgba(0, 0, 0, .2);
+}
+
+.bold{
+  font-weight:bold;
+}
+.page-title{
+  padding:1% 2% 2% 2%;
+  margin:5% 30% 0 30%;
+  font-size:200%;
+  color:black;
+
+}
+.name{
+  font-family:"nasalization-rg","IBM Plex Sans",Helvetica;
+  padding:2% 2% 2% 2%;
+  margin:5% 30% 0 30%;
+  font-size:300%;
+  color:black;
+  border-radius:15px;
+}
+.image{
+  float:left;
+  margin:3% 2% 0 2%;
+  min-width:30%;
+  max-width:35%;
+}
+.summary{
+  color:black;
+  padding:2% 2% 2% 2%;
+  margin-left:auto;*/
+  margin:0% 20% auto 20%;
+  border-radius:5px;
+  font-size:120%;
+}
+
+.about-me{
+  overflow:scroll;
+  margin:auto;
+  padding:1%;
+  font-size:100%;
+  
+}
+.left{
+  text-align:left;
+}
+.right{
+  text-align:right;
+}
+.hreflink{
+  text-decoration:none;
+}
+.hreflink:visited { text-decoration: none; }
+.hreflink:hover { text-decoration: none;}
+.hreflink:focus { text-decoration: none;}
+.hreflink:hover, .hreflink:active { text-decoration: none;}
+.contactlinks{
+  display:inline-block;
+  width:auto;
+  margin:auto 0 auto auto;
+  border-radius:10px;
+  border:2px solid ;
+  text-align:center;
+  position:absolute;
+  right:0px;
+}
+.contactemail{
+  display:inline-block;
+  width:auto;
+  height:auto;
+  margin-left:0;
+  margin-right:auto;
+  color:black;
+}
+.copyright{
+  display:inline-block;
+  color:black;
+  width:auto;
+  margin-left:30%;
+  margin-right:30%;
+  font-size:60%;
+}
+footer{
+  background-color:rgba(255,255,255,0.8);
+  color:gray;
+  position:fixed;
+  bottom:0;
+  width:100%;
+}
+.top-box{
+  margin:5% auto 0 auto;
+}
+.waveformimage{
+  display:block; 
+  text-align:center;
+  margin:auto;
+  width:90%;
+}
+.waveformimage-full{
+  display:block; 
+  text-align:center;
+  margin:auto;
+  width:100%;
+}
+.waveformimage-full .waveformimage:hover{
+  background-color:rgba(0, 0, 0, .2);
+}
+.link{
+
+}
+.link:hover{
+
+}
+.clickable-link{
+  color : #254159;
+}
+.clickable-link:hover{
+  color:gray;
+}
+.research-image{
+  opacity:1.0;
+  width:100%;
+  height:auto;
+  margin:auto;
+}
+.research-blurb{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin:auto; 
+  text-align:center;
+  opacity:0;
+  width:75%;
+  height:75%;
+  overflow:scroll;
+  padding:1% 1% 1% 1%;
+  border-radius:10px;
+  
+}
+.research-bubbles{
+  display:block;
+  position:relative;
+  min-width:29%;
+  max-width:45%;
+  height:auto;
+  padding:auto;
+  /*margin:5% 0 0 0;*/
+  background-color:rgba(128,128,128,.8);
+}
+.research-bubbles:hover .research-image{
+  opacity:0.5;
+}
+.research-bubbles:hover .research-blurb{
+  opacity:1.0;
+  background-color:rgba(255,255,255,0.8);
+}
+.research-bubbles.fleft{
+  float:left;
+  margin:1% auto 1% 2% ;
+}
+.research-bubbles.fright{
+  float:right;
+  margin:1% 2% 1% auto;
+}
+.research-intro{
+  height:100%;
+  background:transparent;
+}
+
+.pub-list{
+  text-align:center;
+  list-style-position:inside;
+  margin:auto auto 2% auto;
+  width:75%;
+}
+.recent-research{
+  display:block;
+  position:relative;
+  overflow:hidden;
+
+}
+
+.mid-page-title{
+  text-align:center;
+  font-size:150%;
+  margin:2% auto 2% auto;
+
+}
+.research-nav{
+  display:block;
+  text-align:center;
+  width:100%;
+  background-color:transparent;
+  overflow:hidden;
+  margin:auto auto 2% auto;
+
+}
+.research-nav-link{
+  
+  font-size:120%;
+  color : #254159;
+  display:inline-block;
+  text-align:center;
+  text-decoration:none;
+
+}
+.research-nav-link:hover{
+
+  background-color:rgba(0, 0, 0, .2);
+}
+.fleft{
+  float:left;
+}
+.research-nav-link.fleft{
+  margin:0% auto 0 30%;
+}
+.fright{
+  float:right;
+}
+.research-nav-link.fright{
+  margin:0% 30% 0 auto;
+}
+.about-me-body{
+  display:block;
+  width:auto;
+  height:auto;
+  overflow:hidden;
+}
+.image-about-me{
+  float:left;
+  width:30%;
+  margin:auto;
+  padding:2%;
+
+}
+.about-me-contact{
+  display:block;
+  width:100%;
+  text-align:center;
+  margin:2% 2% 3% 2%;
+}
+.about-me-contact-table{
+  min-width:50%;
+  max-width:90%;
+  width:auto;
+  text-align:center;
+  margin:auto;
+  font-size:100%;
+  border-style:solid;
+  border-width:5px;
+  border-color:rgba(155,155,155,1);
+}
+tr:nth-child(even){
+  background-color:rgba(155,155,155,0.4); 
+}
+th{
+  background-color:rgba(155,155,155,0.4); 
+}
