@@ -320,13 +320,13 @@ footer{
   float:left;
 }
 .research-nav-link.fleft{
-  margin:0% auto 0 30%;
+  margin:0% auto 0 15%;
 }
 .fright{
   float:right;
 }
 .research-nav-link.fright{
-  margin:0% 30% 0 auto;
+  margin:0% 15% 0 auto;
 }
 .about-me-body{
   display:block;
