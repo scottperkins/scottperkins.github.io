@@ -56,12 +56,10 @@ h2{
 article{
   font-size:100%;
   text-align:center;
-  overflow:scroll;
   border-radius:15px;
 }
 p{
   font-size:100%;
-  overflow:scroll;
   margin:0 2% 0 2%;
 }
 .tnr{
@@ -332,7 +330,6 @@ footer{
   display:block;
   width:auto;
   height:auto;
-  overflow:hidden;
 }
 .image-about-me{
   float:left;
