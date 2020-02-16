@@ -39,13 +39,19 @@ body{
   width:100%;
   height:100%;
 }
+html{
+  height:100%;
+}
 .body-sinnav{
   max-width:2048px;
   min-width:300px;
   width:75%;
-  margin:auto;
   height:100%;
-
+  margin:auto;
+}
+.homepage-body{
+  /*margin:auto;*/
+  /*padding:auto;*/
 }
 
 h1{
@@ -132,8 +138,8 @@ nav.home-page{
 .summary{
   color:black;
   padding:2% 2% 2% 2%;
-  margin-left:auto;*/
-  margin:0% 20% auto 20%;
+  /*margin:0% 20% auto 20%;*/
+  margin:auto;
   border-radius:5px;
   font-size:120%;
 }
@@ -248,7 +254,7 @@ footer{
 .research-bubbles{
   display:block;
   position:relative;
-  min-width:29%;
+  min-width:200px;
   max-width:45%;
   height:auto;
   padding:auto;
@@ -272,6 +278,9 @@ footer{
 }
 .research-intro{
   background:transparent;
+  height:100%;
+  margin:auto;
+  padding:auto;
 }
 
 .pub-list{
@@ -279,11 +288,21 @@ footer{
   list-style-position:inside;
   margin:auto auto 2% auto;
   width:75%;
+  min-height:100%;
 }
 .recent-research{
-  display:block;
-  position:relative;
+  /*display:block;*/
+  /*position:relative;*/
+  margin:auto;
   overflow:hidden;
+  min-height:100%;
+  background-color:rgba(128, 128, 128, .4);
+  width:133%;
+  margin-left:-17%;
+}
+.recent-research-content{
+  width:75%;
+  margin:auto;
 }
 
 .mid-page-title{
