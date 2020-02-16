@@ -224,7 +224,9 @@ footer{
 
 }
 .clickable-link{
-  color : #254159;
+  /*color : #254159;*/
+  text-decoration:underline; 
+  color:black;
 }
 .clickable-link:hover{
   color:gray;
@@ -254,7 +256,7 @@ footer{
 .research-bubbles{
   display:block;
   position:relative;
-  min-width:200px;
+  min-width:240px;
   max-width:45%;
   height:auto;
   padding:auto;
@@ -278,7 +280,7 @@ footer{
 }
 .research-intro{
   background:transparent;
-  height:100%;
+  min-height:100%;
   margin:auto;
   padding:auto;
 }
