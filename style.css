@@ -191,6 +191,7 @@ footer{
   max-width:2048px;*/
   width:100%;
   height:auto;
+  margin: 5% auto auto auto;
   grid-template-rows: repeat(3,minmax(100vh,auto)) ;
   grid-template-columns: 1fr 75% 1fr;
   align-items:center;
@@ -201,6 +202,7 @@ footer{
 }
 .wrapper{
   grid-area: 1 / 2/ span 1/ span 1;
+  align-self:start;
 }
 .research-nav{
   display:block;
