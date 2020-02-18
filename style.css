@@ -45,13 +45,21 @@ html{
 .body-sinnav{
   max-width:2048px;
   min-width:300px;
-  width:75%;
-  height:100%;
+  width:100%;
+  min-height:100%;
+  height:auto;
   margin:auto;
+  padding:auto;
+  text-align:center;
+  display:block;
+  position:relative;
 }
 .homepage-body{
-  /*margin:auto;*/
-  /*padding:auto;*/
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: auto;
 }
 
 h1{
@@ -124,7 +132,7 @@ nav.home-page{
 .name{
   font-family:"nasalization-rg","IBM Plex Sans",Helvetica;
   padding:2% 2% 2% 2%;
-  margin:5% 30% 0 30%;
+  /*margin:5% 30% 0 30%;*/
   font-size:300%;
   color:black;
   border-radius:15px;
@@ -137,7 +145,8 @@ nav.home-page{
 }
 .summary{
   color:black;
-  padding:2% 2% 2% 2%;
+  width:75%;
+  /*padding:2% 2% 2% 2%;*/
   /*margin:0% 20% auto 20%;*/
   margin:auto;
   border-radius:5px;
@@ -148,6 +157,7 @@ nav.home-page{
   margin:auto;
   padding:1%;
   font-size:100%;
+  width:75%;
   
 }
 .left{
@@ -278,29 +288,62 @@ footer{
   float:right;
   margin:1% 2% 1% auto;
 }
+.main{
+  display:grid;
+  min-width:300px;
+  max-width:2048px;
+  width:100%;
+  height:auto;
+  grid-template-rows: repeat(3,minmax(100vh,auto)) ;
+  grid-template-columns: 1fr 75% 1fr;
+  align-items:center;
+  align-content:center;
+  justify-content:center;
+  justify-items:center;
+  grid-row-gap:2%;
+}
 .research-intro{
-  background:transparent;
+  /*position:relative;*/
+  /*background:transparent;
   min-height:100%;
   margin:auto;
-  padding:auto;
+  padding:auto;*/
+}
+.wrapper{
+  /*position:relative;
+  width:100%;
+  height:100%;
+  margin:auto;*/
+  grid-area: 1 / 2/ span 1/ span 1;
+}
+.center-in-parent{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  /*height: auto;*/
+
 }
 
 .pub-list{
   text-align:center;
   list-style-position:inside;
   margin:auto auto 2% auto;
-  width:75%;
+  /*width:75%;*/
   min-height:100%;
+  grid-area: 3 / 2/ span 1/ span 1;
 }
 .recent-research{
   /*display:block;*/
   /*position:relative;*/
   margin:auto;
   overflow:hidden;
-  min-height:100%;
-  background-color:rgba(128, 128, 128, .4);
+  /*min-height:100%;*/
+  height:100%;
+  background-color:rgba(128, 128, 128, .2);
   width:133%;
   margin-left:-17%;
+  grid-area: 2/ 2/ span 1 /span 1;
 }
 .recent-research-content{
   width:75%;
