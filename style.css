@@ -46,12 +46,25 @@ html{
   width:100%;
   margin:auto;
 }
+.homepage-body-grid{
+  display:grid;
+  width:minmax(300px,75%);
+  height:100vh;
+  grid-template-rows: 1% 99%;
+  grid-template-columns: 100%;
+  align-items:center;
+  align-content:center;
+  justify-content:center;
+  justify-items:center;
+
+}
 .homepage-body{
-  position: absolute;
+  /*position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%,-50%);
   width: 100%;
-  height: auto;
+  height: auto;*/
+  grid-area: 2 / 1/ span 1/ span 1;
 }
 h1{
   text-align:center;
@@ -190,8 +203,8 @@ footer{
   /*min-width:300px;
   max-width:2048px;*/
   width:100%;
-  height:auto;
-  margin: 5% auto auto auto;
+  height:300vh;
+  /*margin: 5% auto auto auto;*/
   grid-template-rows: repeat(3,minmax(100vh,auto)) ;
   grid-template-columns: 1fr 75% 1fr;
   align-items:center;
@@ -202,7 +215,7 @@ footer{
 }
 .wrapper{
   grid-area: 1 / 2/ span 1/ span 1;
-  align-self:start;
+  /*align-self:start;*/
 }
 .research-nav{
   display:block;
@@ -272,7 +285,7 @@ footer{
   /*grid-auto-columns:minmax(300px,40%) ; */
   grid-auto-columns:minmax(400px,40%); 
   grid-auto-rows:auto; 
-  grid-auto-flow:row;
+  grid-auto-flow:column dense;
   align-items:center;
   align-content:center;
   justify-content:center;
@@ -351,8 +364,8 @@ footer{
   display:grid;
   margin:auto ;
   width:75%;
-  height:auto;
-  grid-template-rows:repeat(4,auto);
+  height:100vh;
+  grid-template-rows: 1% repeat(5,auto);
   grid-template-columns:repeat(3,1fr);
   justify-content:center;
   justify-items:center;
@@ -361,16 +374,19 @@ footer{
   grid-row-gap:2%;
   grid-column-gap:2%;
 }
+.about-me-title{
+  grid-area : 1/ 1/ span 1/ span 3;
+}
 .about-me{
   font-size:100%;
   width:100%;
-  grid-area: 1/ 2 / span 3 / span 2;
+  grid-area: 2/ 2 / span 3 / span 2;
   align-self:start;
   
 }
 .image-about-me{
   width:100%;
-  grid-area: 1/ 1 / span 1 / span 1;
+  grid-area: 2/ 1 / span 1 / span 1;
 
 }
 .about-me-contact{
@@ -378,7 +394,7 @@ footer{
   width:100%;
   text-align:center;
   /*margin:2% 2% 3% 2%;*/
-  grid-area: 4/ 1 / span 1 / span 3;
+  grid-area: 5/ 1 / span 1 / span 3;
 }
 .about-me-contact-table{
   width:auto;
