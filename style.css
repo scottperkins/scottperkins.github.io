@@ -278,17 +278,22 @@ footer{
 .recent-research-content{
   width:75%;
   margin:auto;
-  display:grid;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  justify-items:center;
+  align-content:center;
+  align-items:center;
+  /*display:grid;
   grid-column-gap:5%;
   grid-row-gap:2%;
   grid-template-columns: repeat(auto-fit,minmax(400px,40%));
-  /*grid-auto-columns:minmax(300px,40%) ; */
   grid-auto-columns:minmax(400px,40%); 
   grid-auto-rows:auto; 
   grid-auto-flow:column dense;
   align-items:center;
   align-content:center;
-  justify-content:center;
+  justify-content:center;*/
 }
 .mid-page-title{
   text-align:center;
@@ -299,8 +304,11 @@ footer{
 .research-bubbles{
   display:block;
   position:relative;
+  margin:1%;
   /*min-width:240px;*/
-  max-width:100%;
+  /*max-width:100%;*/
+  min-width:240px;
+  width: 40%;
   padding:auto;
   background-color:rgba(128,128,128,.8);
 }
