@@ -307,8 +307,8 @@ footer{
   margin:1%;
   /*min-width:240px;*/
   /*max-width:100%;*/
-  min-width:240px;
-  width: 40%;
+  min-width:640px;
+  width: 45%;
   padding:auto;
   background-color:rgba(128,128,128,.8);
 }
@@ -384,6 +384,8 @@ footer{
 }
 .about-me-title{
   grid-area : 1/ 1/ span 1/ span 3;
+  font-size:200%;
+  color:black;
 }
 .about-me{
   font-size:100%;
