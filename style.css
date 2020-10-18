@@ -327,9 +327,7 @@ footer{
   display:block;
   position:relative;
   margin:1%;
-  /*min-width:240px;*/
-  /*max-width:100%;*/
-  min-width:640px;
+  min-width:400px;
   width: 45%;
   padding:auto;
   background-color:rgba(128,128,128,.8);
