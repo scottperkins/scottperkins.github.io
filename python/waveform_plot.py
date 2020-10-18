@@ -22,20 +22,21 @@ templates = 1000
 
 #fig, ax = plt.subplots(nrows=1,ncols=1,figsize=(30,6),dpi=300)
 datafile = 'data/output_GW150914.hdf5'
-psdfile = '/Users/sperkins/Downloads/LOSC_data/GW150914/GWTC1_GW150914_PSDs.dat.txt'
-datastreamfile = '/Users/sperkins/Downloads/LOSC_data/GW150914/H-H1_GWOSC_4KHZ_R1-1126259447-32.txt'
-fig= gmcmc.plot_bayesogram(datafile, psdfile, "Hanford",generation_method_base='IMRPhenomD',generation_method_extended=None, min_dim=15,threads=10, xlim = [5.9,6.1],data_stream_file=datastreamfile)
-ax = fig.axes
+psdfile = 'data/GWTC1_GW150914_PSDs.dat.txt'
+#datastreamfile = '/Users/sperkins/Downloads/LOSC_data/GW150914/H-H1_GWOSC_4KHZ_R1-1126259447-32.txt'
+datastreamfile = None
+fig= gmcmc.plot_bayesogram(datafile, psdfile, "Hanford",generation_method_base='IMRPhenomD',generation_method_extended=None, threads=10, xlim = [5.8,6.1],data_stream_file=datastreamfile)
+ax = fig.axes[0]
 
 data = np.loadtxt(whitened_data,delimiter=',',unpack=True)
 inter = data[1]+1j*data[2] 
 inter = np.where(data[0]<512, inter,np.zeros(len(inter)))
 inter = np.where(data[0]>30, inter,np.zeros(len(inter)))
+df = data[0][1]-data[0][0]
 #datt = np.fft.ifft(data[1]+1j*data[2])
-datt = np.fft.ifft(inter)
+datt = np.fft.ifft(inter)*df
 
 T=1./(data[0][1]-data[0][0])
-print(T)
 
 times = np.linspace(0,T,len(data[0]))
 
@@ -66,7 +67,6 @@ ylength = len(datt[start:end])
 
 
     
-
 plt.axis('off')
 plt.savefig(image_file,transparent=True)
 plt.close()
