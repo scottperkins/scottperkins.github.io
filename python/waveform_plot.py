@@ -25,8 +25,8 @@ datafile = 'data/output_GW150914.hdf5'
 psdfile = 'data/GWTC1_GW150914_PSDs.dat.txt'
 #datastreamfile = '/Users/sperkins/Downloads/LOSC_data/GW150914/H-H1_GWOSC_4KHZ_R1-1126259447-32.txt'
 datastreamfile = None
-gmst=2.45682
-fig= gmcmc.plot_bayesogram(datafile, psdfile, "Hanford",generation_method_base='IMRPhenomD',generation_method_extended=None, threads=10, xlim = [5.8,6.1],data_stream_file=datastreamfile,figsize=[30,6],gmst=gmst)
+gpstime=1126259462.4	
+fig= gmcmc.plot_bayesogram(datafile, psdfile, "Hanford",generation_method_base='IMRPhenomD',generation_method_extended=None, threads=10, xlim = [5.8,6.1],data_stream_file=datastreamfile,figsize=[30,6],gpstime=gpstime)
 ax = fig.axes[0]
 
 data = np.loadtxt(whitened_data,delimiter=',',unpack=True)
