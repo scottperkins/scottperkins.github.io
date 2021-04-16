@@ -11,7 +11,8 @@ color1= "#0D0D0D"
 color2= "#254159"
 whitened_data = "data/whitened_GW150914_Hanford.csv"
 template_data = "data/template_GW150914_Hanford_"
-image_file = "images/waveform_plot_GW150914.png"
+#image_file = "images/waveform_plot_GW150914.png"
+image_file = "images/twitter_waveform_plot_GW150914.png"
 #whitened_data = "data/whitened_GW170729_Hanford.csv"
 #template_data = "data/template_GW170729_Hanford_"
 #image_file = "images/waveform_plot_GW170729.png"
@@ -69,9 +70,11 @@ ylength = len(datt[start:end])
 ##ax.hexbin(x, y, gridsize=(150,150) )
 
 
+#ax.set_facecolor("black")
     
 plt.axis('off')
-plt.savefig(image_file,transparent=True)
+#plt.savefig(image_file,transparent=True)
+plt.savefig(image_file,transparent=False,dpi=300)
 plt.close()
 
 
