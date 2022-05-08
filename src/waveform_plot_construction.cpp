@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
 	//std::string *detector_files = new std::string[num_detectors];
 	//detector_files[0] =  "/Users/sperkins/Downloads/LOSC_data/GW170608/H-H1_GWOSC_4KHZ_R1-1180922479-32.txt";
 	//detector_files[1] =  "/Users/sperkins/Downloads/LOSC_data/GW170608/L-L1_GWOSC_4KHZ_R1-1180922479-32.txt";
+	//int datalength = 131072;
 
 	//int num_detectors = 3, psd_length = 4016;
 	//std::string *detectors = new std::string[num_detectors];
@@ -39,18 +40,46 @@ int main(int argc, char *argv[])
 	//detector_files[1] =  "/Users/sperkins/Downloads/LOSC_data/GW170729/L-L1_GWOSC_4KHZ_R1-1185389792-32.txt";
 	//detector_files[2] =  "/Users/sperkins/Downloads/LOSC_data/GW170729/V-V1_GWOSC_4KHZ_R1-1185389792-32.txt";
 
-	int num_detectors = 2, psd_length = 8032;
+	//int num_detectors = 2, psd_length = 8032;
+	//std::string *detectors = new std::string[num_detectors];
+	//std::string whitened_data_file = "data/whitened_GW150914_Hanford.csv";
+	//std::string template_data_file = "data/template_GW150914_Hanford_";
+	//std::string mcmc_output_file="data/output_GW150914.csv";
+	//std::string psd_file = "/home/sperkins/Downloads/LOSC_data/GW150914/GWTC1_GW150914_PSDs.dat.txt";
+	//detectors[0] = "Hanford";
+	//detectors[1] = "Livingston";
+	//double gps_time = 1126259462.4;//TESTING -- gw150914
+	//std::string *detector_files = new std::string[num_detectors];
+	//detector_files[0] =  "/home/sperkins/Downloads/LOSC_data/GW150914/H-H1_GWOSC_4KHZ_R1-1126259447-32.txt";
+	//detector_files[1] =  "/home/sperkins/Downloads/LOSC_data/GW150914/L-L1_GWOSC_4KHZ_R1-1126259447-32.txt";
+	//int datalength = 131072;
+	
+	//int num_detectors = 2, psd_length = 8032;
+	//std::string *detectors = new std::string[num_detectors];
+	//std::string whitened_data_file = "data/whitened_GW151226_Hanford.csv";
+	//std::string template_data_file = "data/template_GW151226_Hanford_";
+	//std::string mcmc_output_file="data/output_GW150914.csv";
+	//std::string psd_file = "/Users/sperkins/Downloads/LOSC_data/GW151226/GWTC1_GW151226_PSDs.dat.txt";
+	//detectors[0] = "Hanford";
+	//detectors[1] = "Livingston";
+	//double gps_time = 1135136350.6	;//TESTING -- gw150914
+	//std::string *detector_files = new std::string[num_detectors];
+	//detector_files[0] =  "/Users/sperkins/Downloads/LOSC_data/GW151226/H-H1_GWOSC_4KHZ_R1-1135136335-32.txt";
+	//detector_files[1] =  "/Users/sperkins/Downloads/LOSC_data/GW151226/L-L1_GWOSC_4KHZ_R1-1135136335-32.txt";
+	//int datalength = 131072;
+
+	int num_detectors = 2, psd_length = 16064;
 	std::string *detectors = new std::string[num_detectors];
-	std::string whitened_data_file = "data/whitened_GW150914_Hanford.csv";
-	std::string template_data_file = "data/template_GW150914_Hanford_";
+	std::string whitened_data_file = "data/whitened_GW170608_Hanford.csv";
+	std::string template_data_file = "data/template_GW170608_Hanford_";
 	std::string mcmc_output_file="data/output_GW150914.csv";
-	std::string psd_file = "/home/sperkins/Downloads/LOSC_data/GW150914/GWTC1_GW150914_PSDs.dat.txt";
+	std::string psd_file = "/Users/sperkins/Downloads/LOSC_data/GW170608/GWTC1_GW170608_PSDs.dat.txt";
 	detectors[0] = "Hanford";
 	detectors[1] = "Livingston";
-	double gps_time = 1126259462.4;//TESTING -- gw150914
+	double gps_time = 1180922494.5		;//TESTING -- gw150914
 	std::string *detector_files = new std::string[num_detectors];
-	detector_files[0] =  "/home/sperkins/Downloads/LOSC_data/GW150914/H-H1_GWOSC_4KHZ_R1-1126259447-32.txt";
-	detector_files[1] =  "/home/sperkins/Downloads/LOSC_data/GW150914/L-L1_GWOSC_4KHZ_R1-1126259447-32.txt";
+	detector_files[0] =  "/Users/sperkins/Downloads/LOSC_data/GW170608/H-H1_GWOSC_4KHZ_R1-1180922479-32.txt";
+	detector_files[1] =  "/Users/sperkins/Downloads/LOSC_data/GW170608/L-L1_GWOSC_4KHZ_R1-1180922479-32.txt";
 	int datalength = 131072;
 
  	double trigger_time = gps_time;
@@ -60,7 +89,7 @@ int main(int argc, char *argv[])
 	for(int i =0; i<num_detectors; i++)
 		data[i] = (std::complex<double>*)malloc(sizeof(std::complex<double>)*psd_length);
 
-	allocate_LOSC_data(detector_files, psd_file, num_detectors, psd_length, datalength, trigger_time, data, psd_data, freqs_data);
+	allocate_LOSC_data(detector_files, psd_file, num_detectors, psd_length, datalength, trigger_time, 2,data, psd_data, freqs_data);
 
 	double Tobs = 1./(freqs_data[0][1]-freqs_data[0][0]);
 	double **temp = allocate_2D_array(psd_length,3);

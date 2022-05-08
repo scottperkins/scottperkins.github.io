@@ -11,8 +11,10 @@ color1= "#0D0D0D"
 color2= "#254159"
 whitened_data = "data/whitened_GW150914_Hanford.csv"
 template_data = "data/template_GW150914_Hanford_"
-#image_file = "images/waveform_plot_GW150914.png"
-image_file = "images/twitter_waveform_plot_GW150914.png"
+image_file = "images/waveform_plot_GW150914.png"
+#image_file = "images/twitter_waveform_plot_GW150914_presentation.png"
+#image_file = "images/waveform_plot_GW150914_presentation.png"
+#image_file = "images/waveform_plot_GW150914_presentation_data.png"
 #whitened_data = "data/whitened_GW170729_Hanford.csv"
 #template_data = "data/template_GW170729_Hanford_"
 #image_file = "images/waveform_plot_GW170729.png"
@@ -27,7 +29,10 @@ psdfile = 'data/GWTC1_GW150914_PSDs.dat.txt'
 #datastreamfile = '/Users/sperkins/Downloads/LOSC_data/GW150914/H-H1_GWOSC_4KHZ_R1-1126259447-32.txt'
 datastreamfile = None
 gpstime=1126259462.4	
+#fig = plt.figure(figsize=[8,2])
+#fig.add_subplot(1,1,1)
 fig= gmcmc.plot_bayesogram(datafile, psdfile, "Hanford",generation_method_base='IMRPhenomD',generation_method_extended=None, threads=10, xlim = [5.8,6.1],data_stream_file=datastreamfile,figsize=[30,6],gpstime=gpstime)
+#fig= gmcmc.plot_bayesogram(datafile, psdfile, "Hanford",generation_method_base='IMRPhenomD',generation_method_extended=None, threads=10, xlim = [5.8,6.1],data_stream_file=datastreamfile,figsize=[8,2],color='crimson',gpstime=gpstime)
 ax = fig.axes[0]
 
 data = np.loadtxt(whitened_data,delimiter=',',unpack=True)
@@ -73,8 +78,8 @@ ylength = len(datt[start:end])
 #ax.set_facecolor("black")
     
 plt.axis('off')
-#plt.savefig(image_file,transparent=True)
-plt.savefig(image_file,transparent=False,dpi=300)
+plt.savefig(image_file,transparent=True)
+#plt.savefig(image_file,transparent=False,dpi=300)
 plt.close()
 
 
