@@ -6,3 +6,5 @@ permalink: /contact
 ---
 
 Inquiries about research and collaboration are welcome!
+
+scottep3[at]illinois.edu

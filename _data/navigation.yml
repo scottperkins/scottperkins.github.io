@@ -4,15 +4,11 @@ main:
     url: /
   - title: "Research"
     url: /research
+  - title: "Software"
+    url: /software
   - title: "About"
     url: /about
   - title: "Contact"
     url: /contact
   - title: "CV"
     url: "/assets/CV.pdf"
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
