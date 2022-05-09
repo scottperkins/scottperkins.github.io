@@ -94,16 +94,17 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-universal" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+    tracking_id          : "UA-157830474-1"
+    anonymize_ip         : false # true, false (default)
 
 
 # Site Author
 author:
   name             : "Dr. Scott Perkins"
-  avatar           : "/assets/images/NCSA-020.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  #avatar           : "/assets/images/NCSA-020.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/Perkins_Family_213_crop.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Currently a Grad Fellow at CAPS/ICASU at the University of Illinois at Urbana Champaign. Soon to be a postdoctoral research at Lawrence Livermore National Laboratory"
   location         : "Champaign, IL"
   email            :
