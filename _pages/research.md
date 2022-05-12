@@ -12,6 +12,28 @@ While plenty of theories aim to solve some of these issues in physics, only theo
 
 ## Past Work
 
-{% for post in site.categories.research %}
-    {{ post.content }}
+<p>
+In online databases:
+<span class="archive__item-title">
+<a href="https://arxiv.org/a/{{ site.author.arXiv }}"><i class="ai ai-fw ai-arxiv" aria-hidden="true"></i> arXiv</a>,
+<a href="https://orcid.org/{{ site.author.orcid }}"><i class="ai ai-fw ai-orcid" aria-hidden="true"></i> ORCiD</a>,
+<a href="https://scholar.google.com/citations?user={{ site.author.google-scholar }}"><i class="ai ai-fw ai-google-scholar" aria-hidden="true"></i> Google Scholar</a>,
+and
+<a href="https://inspirehep.net/search?p=exactauthor%3A{{ site.author.inspire }}"><i class="ai ai-fw ai-inspire" aria-hidden="true"></i> INSPIRE</a></span>.
+<br>
+I also curate all my publications below for some attempt at
+consistency.
+</p>
+
+{% include base_path %}
+{% capture written_year %}'None'{% endcapture %}
+{% for post in site.posts %}
+  {% if post.research %}
+    {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+    {% if year != written_year %}
+      <h2 id="{{ year | slugify }}" class="archive__subtitle"><a href="#{{ year | slugify }}">#{{ year }}</a></h2>
+      {% capture written_year %}{{ year }}{% endcapture %}
+    {% endif %}
+    {% include archive-single.html %}
+  {% endif %}
 {% endfor %}

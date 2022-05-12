@@ -108,6 +108,10 @@ author:
   bio              : "Currently a Grad Fellow at CAPS/ICASU at the University of Illinois at Urbana Champaign. Soon to be a postdoctoral research at Lawrence Livermore National Laboratory"
   location         : "Champaign, IL"
   email            :
+  arXiv: "perkins_s_1"
+  orcid: "0000-0002-5910-3114"
+  inspire: "Scott.Perkins.1"
+  google-scholar: "uIfTemAAAAAJ&hl"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
