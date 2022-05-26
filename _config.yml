@@ -305,3 +305,14 @@ defaults:
       comments: # true
       share: true
       related: true
+
+
+#Github settings
+safe: true
+source: [/]
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
