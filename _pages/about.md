@@ -22,3 +22,5 @@ I'm a physicist focused on data analysis in observational astronomy (both [gravi
 
 Please reach out with questions, comments or ideas for research!
 
+*Note: Many parts of this site are under construction! Please forgive some of the unpolished posts!*
+
