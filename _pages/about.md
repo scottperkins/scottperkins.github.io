@@ -5,7 +5,7 @@ permalink: /
 subtitle: <a href='https://www.llnl.gov/'>Affiliations</a>. Lawrence Livermore National Laboratory
 
 profile:
-  align: left
+  align: right
   image: prof_pic.jpg
   image_cicular: false # crops the image to make it circular
   address: >
@@ -18,5 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I'm a physicist focused on data analysis in observational astronomy (both [gravitational waves](https://www.ligo.caltech.edu/page/gravitational-waves) and optical surveys)
+I'm a physicist focused on data analysis in observational astronomy (both [gravitational waves](https://www.ligo.caltech.edu/page/gravitational-waves) and optical surveys). I'm generally interested in problems related to inference, uncertainty quantification, and general optimization, especially as they relate to physics and astrophysics.
+
+Please reach out with questions, comments or ideas for research!
 
