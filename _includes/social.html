@@ -4,6 +4,9 @@
             {%- if site.arxiv_id -%}
             <a href="https://arxiv.org/a/{{ site.arxiv_id }}.html" title="arXiv"><i class="ai ai-arxiv"></i></a>
             {% endif %}
+            {%- if site.inspire_id -%}
+            <a href="https://inspirehep.net/author/profile/{{ site.inspire_id }}" title="Inspire"><i class="ai ai-inspire"></i></a>
+            {% endif %}
             {%- if site.orcid_id -%}
             <a href="https://orcid.org/{{ site.orcid_id }}" title="ORCID"><i class="ai ai-orcid"></i></a>
             {% endif %}

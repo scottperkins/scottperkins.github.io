@@ -72,9 +72,9 @@ wikidata_id: # your wikidata id
 dblp_url: # your DBLP profile url
 stackoverflow_id: #your stackoverflow id
 arxiv_id: perkins_s_1 #your arXiv id
+inspire_id: Scott.Perkins.1 #your arXiv id
 
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+contact_note: 
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -92,7 +92,7 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
 blog_name: sperkins # blog_name will be displayed in your blog page
 blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: a simple whitespace theme for academics
+blog_description: A collection of thoughts about papers, techniques, and tools I find  useful
 permalink: /blog/:year/:title/
 
 # Pagination
