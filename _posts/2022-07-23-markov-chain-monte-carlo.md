@@ -9,5 +9,9 @@ categories: techniques
 
 # Statistics Outline
 
+TBD
+
 # Example
+
+TBD
 
