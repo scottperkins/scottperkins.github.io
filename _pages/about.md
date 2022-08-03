@@ -9,7 +9,6 @@ profile:
   image: prof_pic.jpg
   image_cicular: false # crops the image to make it circular
   address: >
-    <p>TBD office number</p>
     <p>7000 East Ave</p>
     <p>Livermore, CA 94550</p>
 
