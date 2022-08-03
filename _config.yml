@@ -80,7 +80,7 @@ contact_note:
 # Analytics and search engine verification
 # -----------------------------------------------------------------------------
 
-google_analytics:  UA-236472247-325840247 # your google-analytics ID (format: UA-XXXXXXXXX)
+google_analytics:  UA-236472247-1 # your google-analytics ID (format: UA-XXXXXXXXX)
 panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
 
 google_site_verification:  # your google-site-verification ID (Google Search Console)
