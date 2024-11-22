@@ -30,9 +30,12 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Research Scientist
+      institution: Lawrence Livermore National Laboratory, Livermore CA
+      year: 2024 - 
     - title: Postdoctoral Researcher
       institution: Lawrence Livermore National Laboratory, Livermore CA
-      year: 2022 - 
+      year: 2022 - 2024 
       description:
         - Explored possible explanations of dark matter, specifically focused on primordial black holes.
     - title: Graduate Research and Teaching Assistant
